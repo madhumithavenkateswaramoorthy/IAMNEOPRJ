@@ -1,0 +1,92 @@
+<div cdkDropList [cdkDropListData]="groups" fxFlex fxLayoutGap="25px" fxLayout="row"
+    (cdkDropListDropped)="dropGroup($event)">
+    <div cdkDropListGroup class="example-container" *ngFor="let group of groups" cdkDrag [cdkDragData]="group">
+        <mat-card class="example-box" style="padding:0px">
+
+            <mat-divider [vertical]="true" [ngClass]="CardDividerClr(group.title)"></mat-divider>
+
+            <div fxLayout="row" fxFlex="100" style="padding:13px" fxLayoutGap="6px">
+                <div>
+                    {{group.title}}
+                </div>
+                <div>
+                    <p> -</p>
+                </div>
+                <div *ngIf="group.title=='Open'">
+                    {{OpenCount}}
+                </div>
+                <div *ngIf="group.title=='Contacted'">
+                    {{contactedCount}}
+                </div>
+                <div *ngIf="group.title=='Writtent test'">
+                    {{WrittenTestCount}}
+                </div>
+                <div *ngIf="group.title=='Technical'">
+                    {{TechnicalRoundCount}}
+                </div>
+                <div *ngIf="group.title=='Culture fit round'">
+                    {{CultureRoundCount}}
+                </div>
+            </div>
+        </mat-card>
+        <div cdkDropList    cdkDropListOrientation="horizontal" class="example-list" id={{group.id}}
+            [cdkDropListData]="group.items | listFilter: selectedFilterText" (cdkDropListDropped)="dropItem($event)"
+            [cdkDropListConnectedTo]="getConnectedList()">
+            <mat-card class="example-box" style="padding:0px;height:00%;width:100%"
+                *ngFor="let item of group.items | listFilter: selectedFilterText" cdkDrag [cdkDragData]="item">
+                <div fxLayout="column" fxFlex="100">
+                    <div fxLayout="column" fxFlex="100" style="padding:13px;height: 24px;">
+                        <div style="height: 24px;" fxLayoutGap="7px">
+                            <div>
+                                <p class="name "> {{item.name}}</p>
+                            </div>
+                            <div fxFlex="50">
+                                <mat-icon mat-list-icon class="supervicor_icon">supervisor_account</mat-icon>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="description">{{item.description}}</p>
+                        </div>
+
+                    </div>
+
+                    <div fxLayoutAlign="center center" class="card_Footer">
+                        <div fxFlex="100" fxLayout="row">
+                            <div fxLayout="row" class="stars">
+                                <button mat-icon-button class="starIcon" *ngFor="let r of ratingarray; index as i"
+                                    (click)="onclick(i)">
+                                    <mat-icon>
+                                        {{Star(i)}}
+                                    </mat-icon>
+                                </button>
+                            </div>
+                            <div fxLayoutAlign="center center">
+                                <div class="circle_person">
+                                    <p class="circle_title">S</p>
+                                </div>
+                            </div>
+                            <div fxLayoutAlign="center center">
+                                <button mat-icon-button [matMenuTriggerFor]="menu"
+                                    aria-label="Example icon-button with a menu">
+                                    <mat-icon>more_vert</mat-icon>
+                                </button>
+                                <mat-menu #menu="matMenu">
+                                    <button mat-menu-item disabled>
+                                        <mat-icon>voicemail</mat-icon>
+                                        <span>Check voice mail</span>
+                                    </button>
+                                    <button mat-menu-item>
+                                        <mat-icon>notifications_off</mat-icon>
+                                        <span>Disable alerts</span>
+                                    </button>
+                                </mat-menu>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </mat-card>
+           
+        </div>
+    </div>
+</div>

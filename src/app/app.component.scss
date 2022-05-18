@@ -1,0 +1,347 @@
+// mat-sidenav:not(.mat-drawer-opened) {
+//     transform: translate3d(0, 0, 0) !important;
+//     visibility: visible !important;
+//     width: 60px !important;
+//     overflow: hidden;
+//   }
+//   mat-sidenav:not(.mat-drawer-opened) div.leftNav div.navProfile img {
+//     width: 40px; margin: 16px 0 0px 0;
+//   }
+//   mat-sidenav:not(.mat-drawer-opened) .navTitle,
+//   mat-sidenav:not(.mat-drawer-opened) .profileTitle {
+//     display: none;
+//   }
+  .example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .example-events {
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+    border: 1px solid #555;
+  }
+  .sidedrawer
+  {
+      background-color: #1f394a;
+  }
+  .hovericon.mat-list-base .mat-list-item:hover .mat-list-icon, .mat-list-base .mat-list-option .mat-list-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    box-sizing: content-box;
+    border-radius: 11%;
+    padding: 4px;
+    color: white;
+    background-color: #683078;
+}
+.hovericon_green.mat-list-base .mat-list-item:hover .mat-list-icon, .mat-list-base .mat-list-option .mat-list-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  box-sizing: content-box;
+  border-radius: 11%;
+  padding: 4px;
+  color: white;
+  background-color: #70ab2e;
+}
+.navlisticon.mat-list-base .mat-list-item .mat-list-icon, .mat-list-base .mat-list-option .mat-list-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    box-sizing: content-box;
+    border-radius: 11%;
+    padding: 4px;
+    color: white;
+    // background-color: #683078;
+}
+.navlisticon_black.mat-list-base .mat-list-item .mat-list-icon, .mat-list-base .mat-list-option .mat-list-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  box-sizing: content-box;
+  border-radius: 11%;
+  padding: 4px;
+  // color: white;
+  // background-color: #683078;
+}
+.sidenav_topbar
+{
+  height: 67%;
+}
+.toolbar
+{
+    background-color: white;;
+    height: 61px;
+    width: 100%;
+}
+.account_circle
+{
+  color: white;
+  background-color: #aa60fd;
+  border-bottom-left-radius: 21px;
+  border-bottom-right-radius: 21px;
+  border-top-left-radius: 21px;
+  height: 29px;
+  border-top-right-radius: 5px;
+  width: 27px;
+  text-align-last: center;
+  padding: 5px;
+}
+.headertitle
+{
+    font-size: 15px;
+    // font-family:'Poppins-Bold';
+    font-weight:bold
+
+}
+.serachicon_search {
+  color: #bfb5b5;
+    transform: scale(0.9);
+    line-height: 16px;
+    vertical-align: text-top;
+}
+.search_input {
+  
+  font-size: 12px;
+  color: #957e7e;
+  font-weight: 500;
+  width: 178px;
+  line-height: 28px;
+ 
+ 
+}
+.select_input
+{
+  font-size: 14px;
+  color: #957e7e;
+  font-weight: 500;
+  width: 179px
+}
+.headertitle_div
+{
+  align-self: end;
+}
+.header_icon
+{
+  align-self: center;
+}
+.circle_person
+{
+  background-color: #cdecc6;
+  width: 32px;
+  height: 32px;
+  border-radius: 24px;
+
+}
+.add_btn
+{
+  background-color: #415b6c;
+  color: #fcfafa;
+  font-size: 12px;
+  height: 28px;
+  border-radius: 5px;
+  /* line-height: 23px; */
+  padding-bottom: 31px;
+}
+.add_icon
+{
+  height: 17px;
+  width: 14px;
+  font-size: 16px;
+  padding: 2px;
+}
+.reedem_div
+{
+  line-height: 7px;
+
+}
+.mat-badge-content {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+.mat-badge-content {
+  width: auto;
+  display: grid;
+  min-width: 32px;
+  min-height: 28px;
+  text-align: center;
+  align-items: center;
+  padding: 5px 3px;
+  top: -20px;
+  right: -22px;
+}
+.header_divider
+{
+  color: gray;
+    height: 21px;
+    width: 2px;
+}
+.nav_divider
+{
+  color: #fffcfc;
+  // height: 21px;
+  width: 61px;
+  border-color: #3a376a;
+}
+.circle_title
+{
+  color: white;
+  text-align-last: center;
+  font-size: 17px;
+}
+.second_title
+{
+  background-color: #f7f7f7;
+  /* padding: 14px; */
+  padding-top: 12px;
+  // padding-bottom: 13px;
+  padding-left: 16px;
+}
+.bottom_title
+{
+  background-color: #efefef;
+  // padding-top: 12px;
+  // padding-left: 16px;
+  padding: 12px 25px 0px 25px;
+  overflow: scroll;
+}
+.card_travel
+{
+  font-size: 19px;
+  line-height: 44px;
+}
+.chevron_icon
+{
+  font-weight: 500;
+  line-height: 13px;
+}
+.JobDetail_btn
+{
+  background-color: white;
+  height: 29px;
+  border-radius: 3px;
+  font-size: 11px;
+  line-height: 2px;
+  padding: 5px;
+}
+.card_div
+{
+  align-self: self-start;
+}
+.job_div
+{
+  height: 38px;
+  width: 61%;
+}
+.fullstack_div
+{
+  padding-right: 17px;
+}
+.addCandidate_div
+{
+  width: 11%;
+    text-align: -webkit-right;
+    font-size: 10px;
+}
+
+::ng-deep .no-line .mat-form-field-underline {
+  display: none;
+  
+}
+.hiphen
+{
+  // padding:10px;
+}
+.active49_div
+{
+  height: 17px;
+}
+.allcandidates
+{
+  font-weight:500;
+}
+.sort
+{
+  color: #9c9393;
+}
+.appearance_updated
+{
+  font-weight: 500;
+}
+.appearance_active
+{
+  color:rgb(224, 218, 218)
+}
+// .not-empty-select.mat-selected {
+//   color: green !important;
+// }
+// .not-empty-select.mat-selected {
+//   color: green !important;
+// }
+
+// :host.mat-select-value-text {
+//   color: green !important;
+// }
+::ng-deep.publishselect .mat-select-value{    
+  color: white!important; 
+  font-size: 12px; 
+  font-weight: 500;
+  // background-color: #415b6c !important;
+}
+// ::ng-deep .mat-select-panel {
+//   background-color: red;
+// }
+
+// ::ng-deep .mat-form-field-infix{
+//   background-color: red;
+// }
+// ::ng-deep .mat-form-field-type-mat-select .mat-form-field-label, .mat-select-value {
+//   color: red;
+// }
+// ::ng-deep.publishmat .mat-form-field-type-mat-select .mat-form-field-label, .mat-select-value {
+//   color: red;
+// }
+::ng-deep.publishmat.mat-form-field-appearance-outline .mat-form-field-outline {
+  display: flex;
+  position: absolute;
+  top: 0.25em;
+  left: 0;
+  background-color: #415b6c !important;
+  font-weight: 400;
+  right: 0;
+  color:white;
+  bottom: 0;
+  pointer-events: none;
+}
+::ng-deep.arrow .mat-select-arrow {
+  width: 0;
+  color: white;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid;
+  margin: 0 4px;
+}
+/** No CSS for this example */
+// .mat-select-content{
+//   background-color: red;
+//   font-size: 1.5em;
+// }
+// .mat-form-field-infix {
+//   display: block;
+//   position: relative;
+//   flex: auto;
+//   background-color: red !important;
+//   min-width: 0;
+//   width: 180px;
+// }
